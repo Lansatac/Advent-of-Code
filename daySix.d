@@ -9,7 +9,7 @@ void main()
 {
 	auto letters = stdin.byLineCopy.array
 		.transposed
-		.map!(l=>l.array.sort.group.array)
+		.map!(l=>l.array.sort.group)
 		.array
 		.map!(l=>tuple(l.maxElement!"a[1]", l.minElement!"a[1]"))
 		.map!(t=>tuple(t[0][0], t[1][0]));
