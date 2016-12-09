@@ -3,16 +3,19 @@ import std.file;
 import std.range;
 import std.string;
 import std.algorithm;
+import std.typecons;
 
 void main()
 {
-	auto letters = readText("daysixInput")
-		.splitLines
+	auto letters = stdin.byLineCopy.array
 		.transposed
-		.map!(l=>l.array.sort.group)
-		.map!(l=>l.minElement!"a[1]")
-		.map!(t=>t[0]);
+		.map!(l=>l.array.sort.group.array)
+		.array
+		.map!(l=>tuple(l.maxElement!"a[1]", l.minElement!"a[1]"))
+		.map!(t=>tuple(t[0][0], t[1][0]));
 
-	auto finalWord = letters.array;
-	writeln(finalWord);
+	auto maximalLetters = letters.map!(t=>t[0]);
+	auto minimalLetters = letters.map!(t=>t[1]);
+	writefln("max: %s", maximalLetters);
+	writefln("min: %s", minimalLetters);
 }
