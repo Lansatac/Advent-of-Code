@@ -22,3 +22,8 @@ docs/
 
 # Code coverage
 *.lst
+
+*.log
+*.def
+
+input/*
