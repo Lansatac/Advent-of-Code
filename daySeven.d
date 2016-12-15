@@ -10,29 +10,25 @@ void main()
 	auto addresses = stdin.byLineCopy.array;
 
 	auto supportedAddresses = addresses
-								.map!elideBrackets
-								//.map!(ad=>ad.split)
-								;//.filter!(chunks=>chunks.any!containsABBA);
+								.map!parseIPv7
+								.filter!(address=>!address.filter!(chunk=>chunk.bracketed).map!(chunk=>chunk.chunk).any!containsABBA && address.filter!(chunk=>!chunk.bracketed).map!(chunk=>chunk.chunk).any!containsABBA)
+								;
 
-int counter;
-	foreach(add; supportedAddresses)
-	{
-		if(add.any!containsABBA)
-		{
-			writeln(add);
-			writeln(++counter);
-		}
-	}
-	//writeln(supportedAddresses.take(5));
+
+	writeln(supportedAddresses.count);
 }
 
-//bool supportsTLS(string address)
-//{
-//	return address.elideBrackets.containsABBA;
-//}
 
-string[] elideBrackets(string address)
+struct IPv7Chunk
 {
+	immutable string chunk;
+	immutable bool bracketed;
+}
+
+IPv7Chunk[] parseIPv7(string address)
+{
+	IPv7Chunk[] chunks;
+	chunks.reserve(3);
 	char[] result;
 	result.reserve(address.length);
 
@@ -43,25 +39,32 @@ string[] elideBrackets(string address)
 		{
 			case '[':
 				++bracketCount;
+				if(bracketCount == 1)
+				{
+					chunks ~= IPv7Chunk(result.idup, false);
+					result.length = 0;
+				}
 				break;
 			case ']':
 				--bracketCount;
+				if(bracketCount == 0)
+				{
+					chunks ~= IPv7Chunk(result.idup, true);
+					result.length = 0;
+				}
 				//check negatives?
 				break;
 			default:
-				if(bracketCount == 0)
-				{
 					result ~= c;
-				}
-				else
-				{
-					result ~= ' ';
-				}
 				break;
 		}
 	}
+	if(result.length > 0)
+	{
+		chunks ~= IPv7Chunk(result.idup, bracketCount > 0);
+	}
 
-	return result.idup.split;
+	return chunks;
 }
 
 bool containsABBA(string chunk)
@@ -75,9 +78,7 @@ bool containsABBA(string chunk)
 			 && chunk[i] == chunk[i + 3]
 			 && chunk[i + 1] == chunk[i + 2];
 			 if(match)
-			 {
-			 	writeln(chunk[i .. i + 4]);
-			 	break;
+			 {			 	break;
 			 }
 		}
 	}
