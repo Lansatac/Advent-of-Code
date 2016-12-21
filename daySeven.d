@@ -78,7 +78,8 @@ bool containsABBA(string chunk)
 			 && chunk[i] == chunk[i + 3]
 			 && chunk[i + 1] == chunk[i + 2];
 			 if(match)
-			 {			 	break;
+			 {
+			  	break;
 			 }
 		}
 	}
