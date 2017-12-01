@@ -1,6 +1,6 @@
 module day1;
 
-@system
+@safe
 unittest
 {
 	assert(3 == solveCaptcha("1122", 1));
@@ -17,7 +17,8 @@ unittest
 }
 
 ///Solve the captcha
-int solveCaptcha(string captcha, int offset)
+@nogc
+int solveCaptcha(string captcha, int offset) pure nothrow
 {
 	import std.algorithm : fold, map;
 	import std.conv : parse, to;
