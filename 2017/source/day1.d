@@ -17,6 +17,7 @@ unittest
 }
 
 ///Solve the captcha
+@safe
 int solveCaptcha(string captcha, int offset) pure
 {
 	import std.algorithm : fold, map;
