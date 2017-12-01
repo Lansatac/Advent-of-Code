@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+2017.so
+2017.dylib
+2017.dll
+2017.a
+2017
+2017.lib
+2017-test-*
+*.exe
+*.o
+*.obj
+*.lst
+*.input

@@ -1,0 +1,12 @@
+{
+	"name": "2017",
+	"authors": [
+		"Jason Yegge"
+	],
+	"targetType": "executable",
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2017, Jason Yegge",
+	"license": "proprietary",
+	"dependencies": {
+	},
+}

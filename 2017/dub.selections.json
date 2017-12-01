@@ -1,0 +1,8 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"d-unit": "0.8.1",
+		"dunit": "1.0.14",
+		"unit-threaded": "0.7.32"
+	}
+}
