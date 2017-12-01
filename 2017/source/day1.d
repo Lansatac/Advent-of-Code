@@ -17,8 +17,7 @@ unittest
 }
 
 ///Solve the captcha
-@nogc
-int solveCaptcha(string captcha, int offset) pure nothrow
+int solveCaptcha(string captcha, int offset) pure
 {
 	import std.algorithm : fold, map;
 	import std.conv : parse, to;
