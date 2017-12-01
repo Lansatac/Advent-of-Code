@@ -24,7 +24,7 @@ int solveCaptcha(string captcha, int offset) pure
 	import std.conv : parse, to;
 	import std.range : cycle, drop, zip;
 
-	auto asNumbers = captcha.map!(to!string).map!(to!(int));
+	auto asNumbers = captcha.map!(c=>c.to!(int) - '0');
 	auto looping = asNumbers.cycle();
 	auto series = asNumbers.zip(looping.drop(offset));
 
