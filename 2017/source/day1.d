@@ -1,4 +1,6 @@
-module day1;
+import std.algorithm;
+import std.range;
+import std.traits;
 
 @safe
 unittest
@@ -16,17 +18,25 @@ unittest
 	assert(4 == solveCaptcha("12131415", 4));
 }
 
-///Solve the captcha
+///Solve the captcha as a string
 @safe
 int solveCaptcha(string captcha, int offset) pure
 {
-	import std.algorithm : fold, map;
-	import std.conv : parse, to;
-	import std.range : cycle, drop, zip;
+	import std.conv : to;
+	return solveCaptcha(captcha.map!(c=>c.to!(int) - '0'), offset);
+}
 
-	auto asNumbers = captcha.map!(c=>c.to!(int) - '0');
-	auto looping = asNumbers.cycle().drop(offset);
-	auto series = asNumbers.zip(looping);
+///Solve the captcha as a numeric range
+@safe
+int solveCaptcha(Numbers)(Numbers captcha, int offset) pure
+	if(isInputRange!Numbers && isNumeric!(ElementType!(Numbers)))
+{
+
+	auto looping = captcha
+					.cycle()
+					.drop(offset);
+
+	auto series = captcha.zip(looping);
 
 	return series.fold!((a, n)=>a + (n[0] == n[1] ? n[0] : 0))(0);
 }

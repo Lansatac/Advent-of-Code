@@ -23,10 +23,11 @@ unittest
 		 "7	5	3",
 		 "2	4	6	8"]
 		 ));
-	assert(18 == processRows!checksumRow(
-		["5	1	9	5",
-		 "7	5	3",
-		 "2	4	6	8"]
+
+	assert(9 == processRows!commonRowDivisor(
+		["5 9 2 8",
+		 "9 4 7 3",
+		 "3 8 6 5"]
 		 ));
 }
 
@@ -58,7 +59,7 @@ uint processRows(alias ChecksumAlgorithm, Rows)(Rows rows)
 	if(isInputRange!Rows && isInputRange!(ElementType!(Rows)) && isNumeric!(ElementType!(ElementType!(Rows))))
 {
 	return rows
-		.map!(ChecksumAlgorithm	)
+		.map!(ChecksumAlgorithm)
 		.sum;
 }
 
@@ -79,13 +80,20 @@ unittest
 uint commonRowDivisor(Row)(Row row)
 	if(isInputRange!Row && isNumeric!(ElementType!(Row)))
 {
-	import std.typecons : tuple, Tuple;
+	auto projection = cartesianProduct(row, row).filter!(n=>n[0] != n[1]);
 
-	auto minmax = row.dropOne().fold!(min, max)(tuple(row.front, row.front));
-
-	return minmax[1] - minmax[0];
+	auto divisors = projection.find!(x=>isEitherEvenlyDivisible(x[0], x[1])).front;
+	return divide(divisors[0], divisors[1]);
 }
 
+///
+@safe @nogc
+int divide(int a, int b) pure
+{
+	if(a > b)
+		return a / b;
+	return b / a;
+}
 ///
 @safe @nogc
 bool isEvenlyDivisible(int lhs, int rhs) pure
