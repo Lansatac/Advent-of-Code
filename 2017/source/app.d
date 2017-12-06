@@ -7,7 +7,7 @@ import std.string;
 
 void main()
 {
-	auto input = stdin.byLine;
+	auto input = stdin.byLineCopy.array;
 
 	//writefln("First: %s", input.solveCaptcha(1));
 	//writefln("Second: %s", input.solveCaptcha(cast(int)(input.length / 2)));
@@ -19,5 +19,5 @@ void main()
 	//writefln("Second: %s", input.processRows!commonRowDivisor());
 
 	writefln("First: %s", input.howManyPassphrasesValid);
-	//writefln("Second: %s", input.processRows!commonRowDivisor());
+	writefln("Second: %s", input.howManyPassphrasesValid2);
 }
