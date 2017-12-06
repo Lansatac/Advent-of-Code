@@ -4,6 +4,7 @@ import std.range;
 import std.stdio;
 import std.typecons;
 
+@safe
 unittest
 {
     assert(tuple(1,0) == Spiral().drop(1).front);
@@ -22,12 +23,15 @@ struct Spiral
     private int x;
     private int y;
 
-    Tuple!(int, int) front()
+    @safe @nogc
+    Tuple!(int, int) front() pure
     {
     	return tuple(x, y);
     }
 
-    void popFront(){
+    @safe @nogc
+    void popFront()
+    {
         switch(leg){
         case 0: ++x; if(x  == layer)  ++leg;                break;
         case 1: ++y; if(y  == layer)  ++leg;                break;
@@ -37,28 +41,10 @@ struct Spiral
         }
     }
 
-    bool empty()
+    @safe @nogc
+    bool empty() pure
     {
     	return false;
     }
 }
 
-//Tuple!(int, int) f(int index)
-//{
-//	int x, y, xMax, yMax;
-//	bool movingLeft = true;
-//	bool movingUp = true;
-//	for(int i = 0; i < index; ++i)
-//	{
-//		if(abs(x) == xMax)
-//		{
-//			if(abs(y) == yMax)
-//			{
-//				movingUp = !movingUp;
-//				++xMax
-//			}
-//		}
-//	}
-
-//	return tuple(x, y);
-//}
