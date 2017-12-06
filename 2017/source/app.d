@@ -1,4 +1,4 @@
-import day3;
+import day4;
 
 import std.conv;
 import std.range;
@@ -15,6 +15,9 @@ void main()
 	//writefln("First: %s", input.processRows!checksumRow());
 	//writefln("Second: %s", input.processRows!commonRowDivisor());
 
-	writefln("First: %s", input.takeOne.front.to!int.manhattanDistance);
+	//writefln("First: %s", input.takeOne.front.to!int.manhattanDistance);
+	//writefln("Second: %s", input.processRows!commonRowDivisor());
+
+	writefln("First: %s", input.howManyPassphrasesValid);
 	//writefln("Second: %s", input.processRows!commonRowDivisor());
 }
