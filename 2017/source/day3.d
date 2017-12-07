@@ -31,7 +31,7 @@ unittest
 
 /// Returns the value of a cell at a given coordinate of the spiral
 int cell(int x, int y, in int start=1) pure nothrow @safe @nogc {
-    y = -1 * y;
+    y = -y;
     immutable l = 2 * max(x.abs, y.abs);
     immutable d = (y > x) ? (l * 3 + x + y) : (l - x - y);
     return (l - 1) ^^ 2 + d + start - 1;
