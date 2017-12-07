@@ -21,6 +21,6 @@ void main()
 	//writefln("First: %s", input.howManyPassphrasesValid);
 	//writefln("Second: %s", input.howManyPassphrasesValid2);
 
-	writefln("First: %s", input.movesToEscape);
-	//writefln("Second: %s", input.howManyPassphrasesValid2);
+	writefln("First: %s", input.movesToEscape!increment);
+	writefln("Second: %s", input.movesToEscape!strange);
 }
