@@ -1,4 +1,4 @@
-import day5;
+import day6;
 
 import std.conv;
 import std.range;
@@ -7,7 +7,7 @@ import std.string;
 
 void main()
 {
-	auto input = stdin.byLineCopy.array;
+	auto input = stdin.byLineCopy;
 
 	//writefln("First: %s", input.solveCaptcha(1));
 	//writefln("Second: %s", input.solveCaptcha(cast(int)(input.length / 2)));
@@ -21,6 +21,9 @@ void main()
 	//writefln("First: %s", input.howManyPassphrasesValid);
 	//writefln("Second: %s", input.howManyPassphrasesValid2);
 
-	writefln("First: %s", input.movesToEscape!increment);
-	writefln("Second: %s", input.movesToEscape!strange);
+	//writefln("First: %s", input.movesToEscape!increment);
+	//writefln("Second: %s", input.movesToEscape!strange);
+
+	writefln("First: %s", input.front.stepsToCycle[0]);
+	writefln("Second: %s", input.front.stepsToCycle[1]);
 }
