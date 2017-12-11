@@ -27,8 +27,7 @@ int solveCaptcha(string captcha, int offset) pure
 }
 
 ///Solve the captcha as a numeric range
-@safe
-int solveCaptcha(Numbers)(Numbers captcha, int offset) pure
+int solveCaptcha(Numbers)(Numbers captcha, int offset) pure @safe
 	if(isInputRange!Numbers && isNumeric!(ElementType!(Numbers)))
 {
 

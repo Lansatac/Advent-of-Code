@@ -16,25 +16,11 @@ unittest
     assert(tuple(-1,-1) == findPosition(7));
 }
 
-@safe
+//@safe
 unittest
 {
-    assert(1 == cell(0,0));
-    assert(2 == cell(1,0));
-    assert(3 == cell(1,1));
-    assert(4 == cell(0,1));
-    assert(5 == cell(-1,1));
-    assert(6 == cell(-1,0));
-    assert(7 == cell(-1,-1));
-    assert(8 == cell(0,-1));
-}
-
-/// Returns the value of a cell at a given coordinate of the spiral
-int cell(int x, int y, in int start=1) pure nothrow @safe @nogc {
-    y = -y;
-    immutable l = 2 * max(x.abs, y.abs);
-    immutable d = (y > x) ? (l * 3 + x + y) : (l - x - y);
-    return (l - 1) ^^ 2 + d + start - 1;
+    assert(10 == summedCell(5));
+    assert(147 == summedCell(142));
 }
 
 /// Range representing the coordinates of an Ulam spiral
@@ -76,9 +62,39 @@ private Tuple!(int, "x", int, "y") findPosition(int number) pure
     return Spiral().drop(number - 1).front;
 }
 
+///
 @safe @nogc
 int manhattanDistance(int number) pure
 {
     auto position = findPosition(number);
     return abs(position.x) + abs(position.y);
+}
+
+///
+int summedCell(int target)// pure @safe
+{
+    int cellValue;
+    int[100][100] cells;
+    cells[50][50] = 1;
+    foreach(coord; Spiral().dropOne.take(100 * 100 - 1))
+    {
+        coord = tuple(coord.x + 50, coord.y + 50);
+        with(coord)
+        {
+            cells[x][y] = cells[x + 1][y]
+                        + cells[x + 1][y + 1]
+                        + cells[x + 1][y - 1]
+                        + cells[x - 1][y]
+                        + cells[x - 1][y + 1]
+                        + cells[x - 1][y - 1]
+                        + cells[x][y + 1]
+                        + cells[x][y - 1]
+                        ;
+            cellValue = cells[x][y];
+
+            if(cellValue > target)
+                break;
+        }
+    }
+    return cellValue;
 }
