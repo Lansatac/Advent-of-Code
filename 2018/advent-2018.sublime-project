@@ -1,0 +1,294 @@
+{
+	"build_systems": [
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=debug",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=debug",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build debug"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=release",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=release",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build release"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=release-debug",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=release-debug",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build release-debug"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=release-nobounds",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=release-nobounds",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build release-nobounds"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=docs",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=docs",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build docs"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=ddox",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=ddox",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build ddox"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=profile",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=profile",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build profile"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=profile-gc",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=profile-gc",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build profile-gc"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=cov",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=cov",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build cov"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=unittest-cov",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=unittest-cov",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build unittest-cov"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\: (.*)$",
+			"cmd": [
+				"dub",
+				"build",
+				"--build=syntax",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"variants": [
+				{
+					"cmd": [
+						"dub",
+						"run",
+						"--build=syntax",
+						"--arch=x86",
+						"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+					],
+					"name": "Run"
+				}
+			],
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"name": "DUB build syntax"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\)\\:() (.*)$",
+			"working_dir": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018",
+			"cmd": [
+				"dub",
+				"test",
+				"--arch=x86",
+				"--compiler=C:\\D\\dmd2\\windows\\bin\\dmd.exe"
+			],
+			"name": "DUB test"
+		}
+	],
+	"settings": {
+		"include_paths": [
+			"C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018\\source\\"
+		]
+	},
+	"folders": [
+		{
+			"folder_exclude_patterns": [
+				".dub"
+			],
+			"follow_symlinks": true,
+			"path": "C:\\Users\\Jason\\Documents\\code\\Advent-of-Code\\2018\\",
+			"name": "advent-2018"
+		}
+	]
+}

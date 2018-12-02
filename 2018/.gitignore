@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+advent-2018.so
+advent-2018.dylib
+advent-2018.dll
+advent-2018.a
+advent-2018.lib
+advent-2018-test-*
+*.exe
+*.o
+*.obj
+*.lst
+input/*

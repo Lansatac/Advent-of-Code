@@ -1,0 +1,5 @@
+name "advent-2018"
+description "A minimal D application."
+authors "Jason"
+copyright "Copyright © 2018, Jason"
+license "proprietary"
