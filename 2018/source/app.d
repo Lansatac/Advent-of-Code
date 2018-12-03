@@ -3,9 +3,9 @@ import std.stdio;
 
 void main()
 {
-	import std.file;
-
 	import day1;
+	import day2;
 
-	readText("input/day1").day1;
+	//day1();
+	day2();
 }

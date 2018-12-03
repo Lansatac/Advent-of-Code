@@ -6,14 +6,14 @@ import std.range;
 
 enum numberMatch = ctRegex!(r"[+-][0-9]+");
 
-void day1(Input)(Input input)
-	if(isInputRange!Input && isSomeChar!(ElementType!Input))
+void day1()
 {
 	import std.stdio;
 	import std.algorithm;
 	import std.conv;
+	import std.file;
 
-	auto parsed = input.matchAll(numberMatch)
+	auto parsed = readText("input/day1").matchAll(numberMatch)
 		.map!(match=> match.front.to!int)
 		;
 
