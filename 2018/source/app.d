@@ -7,5 +7,5 @@ void main()
 
 	import day1;
 
-	writeln(readText("input/day1").day1);
+	readText("input/day1").day1;
 }
