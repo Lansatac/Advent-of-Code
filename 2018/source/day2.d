@@ -12,7 +12,7 @@ abcdee contains two e.
 ababab contains three a and three b, but it only counts once.
 */
 
-void dayTwo()
+void day2()
 {
 	import std.stdio;
 	import std.file;
@@ -61,9 +61,15 @@ unittest
 int checksum(Input)(Input ids)
 	if(isInputRange!Input && isSomeString!(ElementType!Input))
 {
-	auto checksums = ids.map!(id => containsExactly(id, 2), id => containsExactly(id, 3));
+	import std.algorithm;
+	import std.typecons;
 
-	checksums.reduce!();
+	auto checksums = ids
+					.map!(id => containsExactly(id, 2) ? 1 : 0, id => containsExactly(id, 3) ? 1 : 0)
+					.fold!(delegate Tuple!(int, int) (Tuple!(int, int) a, Tuple!(int, int) id)	{
+						return tuple(a[0] + id[0], a[1] + id[1]);
+					})
+					(tuple(0,0));
 
-	return 0;
+	return checksums[0] * checksums[1];
 }

@@ -7,5 +7,5 @@ void main()
 	import day2;
 
 	//day1();
-	day2();
+	day2.day2();
 }

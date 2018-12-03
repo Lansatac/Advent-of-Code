@@ -1,1 +1,712 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"std",
+				"stdio\tmodule"
+			],
+			[
+				"fre",
+				"frequencies\tvariable"
+			],
+			[
+				"Assoc",
+				"associativity\tfunction"
+			],
+			[
+				"out",
+				"OutputStack\tvariable"
+			],
+			[
+				"Token",
+				"TokenType\tenum"
+			],
+			[
+				"string",
+				"stringof\tkeyword"
+			],
+			[
+				"To",
+				"ToToken\tfunction"
+			],
+			[
+				"ran",
+				"range\tmodule"
+			],
+			[
+				"os",
+				"osx-x64"
+			],
+			[
+				"ma",
+				"max"
+			],
+			[
+				"re",
+				"reduce"
+			],
+			[
+				"Target",
+				"TargetFrameworkVersion"
+			],
+			[
+				"Proper",
+				"PropertyGroup"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/app.d",
+			"settings":
+			{
+				"buffer_size": 85,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/day1.d",
+			"settings":
+			{
+				"buffer_size": 1304,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "day1.d"
+			}
+		},
+		{
+			"file": "source/day2.d",
+			"settings":
+			{
+				"buffer_size": 1837,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "day2.d"
+			}
+		},
+		{
+			"file": "dub.sdl",
+			"settings":
+			{
+				"buffer_size": 131,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "import day1;\nimport day2;\n\nvoid main()\n{\n}",
+			"file": "test/app.d",
+			"file_size": 47,
+			"file_write_time": 131882877444292088,
+			"settings":
+			{
+				"buffer_size": 42,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "app.d"
+			}
+		},
+		{
+			"file": "input/day1",
+			"settings":
+			{
+				"buffer_size": 3461,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "day1"
+			}
+		}
+	],
+	"build_system": "DUB test",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"DUB build cov",
+					""
+				],
+				[
+					"DUB build cov",
+					"Run"
+				],
+				[
+					"DUB build ddox",
+					""
+				],
+				[
+					"DUB build ddox",
+					"Run"
+				],
+				[
+					"DUB build debug",
+					""
+				],
+				[
+					"DUB build debug",
+					"Run"
+				],
+				[
+					"DUB build docs",
+					""
+				],
+				[
+					"DUB build docs",
+					"Run"
+				],
+				[
+					"DUB build profile",
+					""
+				],
+				[
+					"DUB build profile",
+					"Run"
+				],
+				[
+					"DUB build profile-gc",
+					""
+				],
+				[
+					"DUB build profile-gc",
+					"Run"
+				],
+				[
+					"DUB build release",
+					""
+				],
+				[
+					"DUB build release",
+					"Run"
+				],
+				[
+					"DUB build release-debug",
+					""
+				],
+				[
+					"DUB build release-debug",
+					"Run"
+				],
+				[
+					"DUB build release-nobounds",
+					""
+				],
+				[
+					"DUB build release-nobounds",
+					"Run"
+				],
+				[
+					"DUB build syntax",
+					""
+				],
+				[
+					"DUB build syntax",
+					"Run"
+				],
+				[
+					"DUB build unittest-cov",
+					""
+				],
+				[
+					"DUB build unittest-cov",
+					"Run"
+				],
+				[
+					"DUB test",
+					""
+				],
+				[
+					"Packages/D/D.sublime-build",
+					""
+				],
+				[
+					"Packages/DKit/D.sublime-build",
+					""
+				],
+				[
+					"Packages/DKit/D.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/DKit/D.sublime-build",
+					"dub"
+				],
+				[
+					"Packages/DKit/D.sublime-build",
+					"dub (single file)"
+				],
+				[
+					"Packages/DKit/D.sublime-build",
+					"dub build"
+				],
+				[
+					"Packages/DKit/D.sublime-build",
+					"dub build (single file)"
+				],
+				[
+					"Packages/DKit/D.sublime-build",
+					"dub test"
+				]
+			],
+			[
+				"DUB test",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 302.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"dkit",
+				"DKit: Restart DCD Autocompletion Server"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Jason/Documents/code/Advent-of-Code/2018",
+		"/C/Users/Jason/Documents/code/Advent-of-Code/2018/source"
+	],
+	"file_history":
+	[
+		"/C/Users/Jason/Documents/code/Advent-of-Code/2018/input/day2",
+		"/C/Users/Jason/Documents/Projects/parser/source/Convert.d",
+		"/C/Users/Jason/Documents/Projects/parser/source/test/app.d",
+		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/DKit/DKit.sublime-settings",
+		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/User/DKit.sublime-settings",
+		"/C/Users/Jason/Documents/code/CyLR/CyLR/obj/CyLR.csproj.nuget.g.props",
+		"/C/Users/Jason/Documents/code/CyLR/CyLR/obj/project.assets.json",
+		"/C/Users/Jason/Documents/code/CyLR/CyLR/nuget.config",
+		"/C/Users/Jason/Documents/code/CyLR/scripts/posix/build.sh",
+		"/C/Users/Jason/Documents/code/CyLR/CyLRTests/CyLRTests.csproj",
+		"/C/Users/Jason/Documents/code/CyLR/CyLR/CyLR.csproj",
+		"/C/Users/Jason/Documents/code/CyLR-Core/CyLR.Test/CyLR.Test.csproj",
+		"/C/Users/Jason/Documents/code/CyLR-Core/CyLR/CyLR.csproj",
+		"/C/Users/Jason/Downloads/RACK_SOURCE_CODE_1_0_1/Game.as",
+		"/C/Users/Jason/AppData/Local/Temp/Temp1_MechJeb2-2.7.3.0.zip/MechJeb2/LICENSE.md",
+		"/C/Users/Jason/Java/Program.java",
+		"/C/Users/Jason/Java/Program.class",
+		"/C/Users/Jason/code/peggle/source/app.d",
+		"/C/Users/Jason/Documents/code/Advent-of-Code/2017/source/day1.d",
+		"/C/Users/Jason/Documents/code/Advent-of-Code/2017/source/app.d",
+		"/C/Users/Jason/Documents/code/Advent-of-Code/2017/source/day2.d",
+		"/C/Users/Jason/Documents/code/CyLR/README.md",
+		"/C/Users/Jason/Documents/code/CyLR/build.sh",
+		"/C/Users/Jason/Documents/code/coretest/coretest.csproj",
+		"/C/Users/Jason/Downloads/Vernor-73c8e7a2a3d8.json",
+		"/C/Users/Jason/.gitconfig",
+		"/C/Users/Jason/Documents/code/CyLR/CyLR.sln",
+		"/C/Users/Jason/Documents/code/vulkanTest/dub.json",
+		"/C/Users/Jason/Documents/code/CyLR/test.sh",
+		"/C/Users/Jason/Documents/code/CyLR/.travis.yml",
+		"/C/Users/Jason/Downloads/shexview-x64/readme.txt",
+		"/C/Users/Jason/Documents/sandbox-engine/dub.selections.json",
+		"/C/Users/Jason/Documents/code/vulkanTest/dub.selections.json",
+		"/C/Users/Jason/Documents/sandbox-engine/dub.json",
+		"/C/Users/Jason/Documents/code/vulkanTest/source/app.d",
+		"/C/Users/Jason/Documents/code/TiltingGM/Library/Tilted/dub.json",
+		"/C/Users/Jason/Desktop/human.cs",
+		"/C/Users/Jason/Documents/code/TiltingGM/Library/Photon-Windows-Sdk_v4-1-6-0/Photon-Windows-Sdk.readme",
+		"/C/Users/Jason/Downloads/Photon-Windows-Sdk_v4-1-6-0/Photon-Windows-Sdk_v4-1-6-0/Photon-Windows-Sdk.readme",
+		"/C/Users/Jason/Documents/code/Tilting/Tilting.sln",
+		"/C/Users/Jason/Documents/code/Tilting/Tilting/Tilting.csproj",
+		"/E/code/dvworld/.gitignore",
+		"/C/Users/Jason/Downloads/Photon-DotNet-Sdk_v4-1-1-6/readme.txt",
+		"/E/code/dvworld/.vs/dvworld/v14/.suo",
+		"/C/Users/Jason/Documents/sourcetree.ppk",
+		"/E/code/dvworld/ProjectSettings/ProjectVersion.txt",
+		"/E/code/dvworld/Library/LibraryFormatVersion.txt",
+		"/C/Users/Jason/AppData/Local/Temp/Temp1_assimp-3.3.1.zip/assimp-3.3.1/Readme.md",
+		"/C/Users/Jason/Downloads/assimp-3.3.1/assimp-3.3.1/assimp-config.cmake",
+		"/C/Users/Jason/Documents/code/Tilting/CanIReallyBeAnOtter/Otter/Otter/Otter.csproj",
+		"/C/Users/Jason/Documents/PythLR/README.md",
+		"/C/Users/Jason/Documents/home public",
+		"/C/Users/Jason/Documents/PythLR/CyLR.sln",
+		"/C/Users/Jason/Documents/code/CyLR/scripts/deploy.sh",
+		"/C/Users/Jason/Documents/code/CyLR/deploy.sh",
+		"/C/Users/Jason/Documents/PythLR/CyLRTests/CyLRTests.csproj",
+		"/C/Users/Jason/Documents/PythLR/CyLR/CyLR.csproj",
+		"/C/Users/Jason/Documents/PythLR/.travis.yml",
+		"/C/Users/Jason/Documents/PythLR/packages/ILMerge.2.14.1208/tools/ILMerge.doc",
+		"/C/Program Files (x86)/Mono/etc/mono/config",
+		"/C/Users/Jason/Desktop/df_43_05_win/data/init/d_init.txt",
+		"/C/Users/Jason/Desktop/df_43_05_win/data/init/init.txt",
+		"/C/Program Files (x86)/Bethesda Softworks/Morrowind/Morrowind.ini",
+		"/C/Users/Jason/AppData/Local/Temp/Temp1_Skies .IV-43311--IV.zip/Skies .IV Readme.txt",
+		"/C/Users/Jason/AppData/Local/Temp/Temp1_Skies .IV-43311--IV.zip/Skies - AoF Skies/Original Readme.txt",
+		"/C/Users/Jason/AppData/Local/Temp/Temp1_Skies .IV-43311--IV.zip/Particles/merge these into your Data Files folder",
+		"/C/Users/Jason/Desktop/df_43_05_win/data/shader.vs",
+		"/C/Users/Jason/Downloads/checksum",
+		"/C/Users/Jason/Documents/PythLR/PythLR/PythLR/PythLR.csproj",
+		"/C/Users/Jason/Documents/PythLR/CyLR/bin/Debug/log.txt",
+		"/C/Users/Jason/Documents/PythLR/.git/config",
+		"/C/Users/Jason/Documents/code/mono/net_4_x.sln",
+		"/C/Users/Jason/Documents/gitignore_global.txt",
+		"/C/HaxLogs.txt",
+		"/C/Users/Jason/Documents/PythLR/src/pythlr.py",
+		"/C/Users/Jason/Documents/Visual Studio 2015/Projects/Ntfs/Ntfs/bin/Debug/output2/Windows/System32/winevt/logs/Application.evtx",
+		"/C/Users/Jason/Documents/python-ntfs/examples/indxparse/indxparse.py",
+		"/C/Users/Jason/Documents/python-ntfs/examples/inspect_directory/inspect_directory.py",
+		"/C/Users/Jason/Documents/python-ntfs/examples/inspect_file/inspect_file.py",
+		"/C/Users/Jason/Documents/python-ntfs/ntfs/volume/__init__.py",
+		"/C/Python34/Lib/site.py",
+		"/C/Users/Jason/Documents/python-ntfs/ntfs/__init__.py",
+		"/C/Users/Jason/Documents/python-ntfs/__init__.py",
+		"/C/Users/Jason/Documents/python-ntfs/build/lib/ntfs/__init__.py",
+		"/C/Users/Jason/Desktop/df_42_03_win/data/init/init.txt",
+		"/C/Users/Jason/Desktop/df_42_03_win/data/init/d_init.txt",
+		"/C/Users/Jason/Documents/csharp-gofish-jasony/bin/httptest.txt",
+		"/C/Users/Jason/Documents/homegroup.txt",
+		"/C/Users/Jason/Downloads/UOP_Vanilla_V1.5/UOP Vanilla README v1.5.TXT",
+		"/C/Users/Jason/OneDrive/steam.txt",
+		"/C/Users/Jason/Documents/csharp-gofish-jasony/packages/Nancy.Hosting.Self.1.2.0/Nancy.Hosting.Self.1.2.0.nupkg",
+		"/C/Users/Jason/OneDrive/.849C9593-D756-4E56-8D6E-42412F2A707B",
+		"/C/Users/Jason/Desktop/df_42_02_win/data/init/d_init.txt",
+		"/C/Users/Jason/Desktop/df_42_02_win/data/init/init.txt",
+		"/C/Users/Jason/Desktop/df_42_01_win/data/init/init.txt",
+		"/C/Users/Jason/Desktop/df_42_01_win/data/init/d_init.txt",
+		"/C/Users/Jason/Desktop/df_42_02_win/data/shader.fs",
+		"/C/Users/Jason/Desktop/df_42_01_win/command line.txt",
+		"/C/Users/Jason/Desktop/df_42_01_win/errorlog.txt",
+		"/C/Users/Jason/Desktop/df_42_01_win/gamelog.txt",
+		"/C/Users/Jason/Documents/My Games/Fallout4/Fallout4Prefs.ini",
+		"/C/Users/Jason/Documents/My Games/Fallout4/Fallout4.ini",
+		"/C/Users/Jason/Documents/My Games/Fallout4/Fallout4Custom.ini",
+		"/C/Users/Jason/Downloads/qcom-flo-jss15q-73c28bb6/qcom-flo-jss15q-73c28bb6/extract-qcom-flo.sh"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 283.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/app.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 85,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/day1.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								31
+							]
+						],
+						"settings":
+						{
+							"auto_name": "day1.d",
+							"syntax": "Packages/D/D.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/day2.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1823,
+								1823
+							]
+						],
+						"settings":
+						{
+							"auto_name": "day2.d",
+							"syntax": "Packages/D/D.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1104.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "dub.sdl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								131,
+								131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "test/app.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 42,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"auto_name": "app.d",
+							"syntax": "Packages/D/D.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "input/day1",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3355,
+								3355
+							]
+						],
+						"settings":
+						{
+							"auto_name": "day1",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 21180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 97.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 279.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "advent-2018.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"build",
+				"scripts\\build.sh"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
